@@ -1,9 +1,15 @@
+:root{
+  --new-div-width:5px;
+   --new-div-height:5px;
+}
+
 .header{
   width:100vw;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #generate{
@@ -16,17 +22,16 @@
 }
 
 .container{
-  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 4rem;
 }
 
 .newDiv{
   border: 1px solid rgb(231, 225, 225);
-  width: 5px;
-  height: 5px;
+  width: var(--new-div-width);
+  height: var(--new-div-height);
   background-color: white;
 }
 

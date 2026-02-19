@@ -1,5 +1,6 @@
 const parentContainer = document.querySelector(".container");
 const generateBtn = document.querySelector("#generate");
+const sizeBtn = document.querySelector("#getPixelSize");
 
 generateBtn.addEventListener("click", () => {
   let widthParam = prompt("Width?");
@@ -15,7 +16,7 @@ generateBtn.addEventListener("click", () => {
 });
 
 const createGrid = (pixLong, pixHaut) => {
-  parentContainer.innerHTML = ""
+  parentContainer.innerHTML = "";
   for (let col = 0; col < pixHaut; col++) {
     const parentDiv = document.createElement("div");
     parentDiv.classList.add("parentDiv");
@@ -33,3 +34,15 @@ const createGrid = (pixLong, pixHaut) => {
     }
   }
 };
+
+sizeBtn.addEventListener("click", () => {
+  let sizeVal = document.querySelector("#pixelSize").value;
+  if (sizeVal > 15) {
+    sizeVal = 15;
+  }
+  document.documentElement.style.setProperty("--new-div-width", `${sizeVal}px`);
+  document.documentElement.style.setProperty(
+    "--new-div-height",
+    `${sizeVal}px`,
+  );
+});
