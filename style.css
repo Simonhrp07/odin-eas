@@ -1,0 +1,36 @@
+.header{
+  width:100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#generate{
+  margin: auto;
+  width: 25%;
+  height: 25%;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container{
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.newDiv{
+  border: 1px solid rgb(231, 225, 225);
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.activated{
+  background-color: red;
+  border: 1px solid red;
+}
